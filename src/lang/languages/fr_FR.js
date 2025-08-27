@@ -692,6 +692,9 @@ export default {
 
                 lockFaders: "Verrouiller les positions des curseurs lors de la mise en sourdine générale.",
                 lockFadersAccessibility: "Empêche les curseurs de descendre lorsque la mise en sourdine générale est activée.",
+
+                tapTempoWindow: "Fenêtre Tap Tempo",
+                tapTempoWindowAccessibility: "Temps maximum entre les taps (en millisecondes) pour la détection du tempo",
             },
 
             settingsButton: "Paramètres de l'Utilitaire",

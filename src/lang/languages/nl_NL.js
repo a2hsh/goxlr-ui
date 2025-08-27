@@ -692,6 +692,9 @@ export default {
 
                 lockFaders: "Blokkeer fader posities bij dempen",
                 lockFadersAccessibility: "Zorgt ervoor dat de faders niet meer bewegen terwijl het kanaal gedempt is",
+
+                tapTempoWindow: "Tap Tempo Venster",
+                tapTempoWindowAccessibility: "Maximale tijd tussen tikken (in milliseconden) voor tempo-detectie",
             },
 
             settingsButton: "Utility Instellingen",

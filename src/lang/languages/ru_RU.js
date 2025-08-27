@@ -692,6 +692,9 @@ export default {
 
                 lockFaders: "Не передвигать Фейдеры при Заглушении для Всего",
                 lockFadersAccessibility: "Не давать фейдера передвигаться вниз, когда включён Заглушить для Всего",
+
+                tapTempoWindow: "Окно Tap Tempo",
+                tapTempoWindowAccessibility: "Максимальное время между нажатиями (в миллисекундах) для определения темпа",
             },
 
             settingsButton: "Настройки Утилиты",

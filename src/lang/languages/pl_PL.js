@@ -692,6 +692,9 @@ export default {
 
                 lockFaders: "Zablokuj Pozycje Suwaków kiedy Wyciszasz Wszędzie",
                 lockFadersAccessibility: "Nie przesuwa suwaków na dół kiedy opcja Wyciszenia Wszędzie jest aktywna",
+
+                tapTempoWindow: "Okno Tap Tempo",
+                tapTempoWindowAccessibility: "Maksymalny czas między stuknięciami (w milisekundach) do wykrywania tempa",
             },
 
             settingsButton: "Ustawienia GoXLR Utility",

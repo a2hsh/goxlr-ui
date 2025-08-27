@@ -705,6 +705,9 @@ export default {
 
                 samplerFadeDuration: "Sampler Fade Duration",
                 samplerFadeDurationAccessibility: "The duration in milliseconds that the sampler will fade out when playback is stopped",
+
+                tapTempoWindow: "Tap Tempo Window",
+                tapTempoWindowAccessibility: "Maximum time between taps (in milliseconds) for tap-tempo detection",
             },
 
             settingsButton: "Utility Settings",

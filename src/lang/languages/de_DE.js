@@ -680,6 +680,9 @@ export default {
 
                 samplerFadeDuration: "Sampler Ausblenddauer",
                 samplerFadeDurationAccessibility: "Die Dauer in Millisekunden, die der Sampler ausgeblendet wird, wenn die Wiedergabe gestoppt wird",
+
+                tapTempoWindow: "Tap Tempo Fenster",
+                tapTempoWindowAccessibility: "Maximale Zeit zwischen Taps (in Millisekunden) für Tap-Tempo-Erkennung",
             },
 
             settingsButton: "Utility Einstellungen",

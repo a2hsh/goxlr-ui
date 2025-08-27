@@ -639,6 +639,9 @@ export default {
 
                 lockFaders: "Bloquear la posición de los faders al silenciar todo",
                 lockFadersAccessibility: "Evita que los faders se desplacen hacia abajo cuando está activo Silenciar Todo",
+
+                tapTempoWindow: "Ventana de Tap Tempo",
+                tapTempoWindowAccessibility: "Tiempo máximo entre toques (en milisegundos) para la detección de tempo",
             },
 
             settingsButton: "Configuración de la Utilidad",

@@ -30,6 +30,11 @@
                        @change="updateSamplerFadeDuration" :label="$t('message.system.device.samplerFadeDuration')"
                        :description="$t('message.system.device.samplerFadeDurationAccessibility')"/>
 
+        <NumberSetting v-if="hasTapTempoWindow()" :value="getTapTempoWindow()" :min="1000" :max="2000" suffix="ms"
+                       @change="updateTapTempoWindow"
+                       :label="$t('message.system.device.tapTempoWindow')"
+                       :description="$t('message.system.device.tapTempoWindowAccessibility')"/>
+
         <BooleanSetting :label="$t('message.system.device.voiceDeafen')" :enabled="get_vcmaammtcm()"
                         @change="set_vcmaammtcm" :description="$t('message.system.device.voiceDeafenAccessibility')"/>
 
@@ -103,6 +108,26 @@ export default {
 
     updateSamplerFadeDuration(millis) {
       websocket.send_command(store.getActiveSerial(), {"SetSamplerFadeDuration": millis});
+    },
+
+    hasTapTempoWindow() {
+      const device = store.getActiveDevice();
+      if (!device) return false;
+      return device.settings.tap_tempo_window_ms !== undefined;
+    },
+
+    getTapTempoWindow() {
+      if (!store.getActiveDevice()) {
+        return 1500;
+      }
+      // Fallback to default if not provided by daemon
+      const value = store.getActiveDevice().settings.tap_tempo_window_ms ?? 1500;
+      // Clamp to UI-supported range
+      return Math.min(2000, Math.max(1000, value));
+    },
+
+    updateTapTempoWindow(millis) {
+      websocket.send_command(store.getActiveSerial(), {"SetTapTempoWindow": millis});
     },
 
     get_vcmaammtcm() {

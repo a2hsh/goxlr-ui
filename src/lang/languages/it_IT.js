@@ -672,6 +672,9 @@ export default {
 
                 lockFaders: "Blocca posizioni fader quando Muta verso Tutti viene attivato",
                 lockFadersAccessibility: "Disabilita il movimento dei fader quando viene attivato Muta verso Tutti",
+
+                tapTempoWindow: "Finestra Tap Tempo",
+                tapTempoWindowAccessibility: "Tempo massimo tra i tap (in millisecondi) per il rilevamento del tempo",
             },
 
             settingsButton: "Impostazioni Utility",
